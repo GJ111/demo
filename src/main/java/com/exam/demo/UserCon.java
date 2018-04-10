@@ -12,14 +12,7 @@ public class UserCon {
     @RequestMapping(value = "/login")
     public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index");
-
-        List<String> userList = new ArrayList<String>();
-        userList.add("admin");
-        userList.add("user1");
-        userList.add("user2");
-
-        modelAndView.addObject("userList", userList);
+        modelAndView.setViewName("ztree");
         return modelAndView;
     }
 
